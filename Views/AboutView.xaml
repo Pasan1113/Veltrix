@@ -1,0 +1,9 @@
+<UserControl x:Class="Veltrix.Views.AboutView" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Grid><Border Background="#151E30" BorderBrush="#263449" BorderThickness="1" CornerRadius="16" Padding="24" VerticalAlignment="Center"><StackPanel HorizontalAlignment="Center">
+<Image Source="/Assets/VeltrixLogo.png" Width="100" Height="100"/>
+<TextBlock Text="V E L T R I X" FontSize="30" FontWeight="Bold" Foreground="#F8FAFC" HorizontalAlignment="Center"/>
+<TextBlock Text="Every byte. Every second." Foreground="#94A3B8" FontSize="16" HorizontalAlignment="Center" Margin="0,8"/>
+<TextBlock Text="Version 1.0 • Windows Network Monitor" Foreground="#22D3EE" HorizontalAlignment="Center" Margin="0,8"/>
+<TextBlock Text="Live speeds • Usage history • Application traffic • Network quality" Foreground="#94A3B8" TextWrapping="Wrap" TextAlignment="Center" Margin="0,12"/>
+<TextBlock Text="Usage measurements are local estimates, not ISP billing records." Foreground="#94A3B8" TextWrapping="Wrap" TextAlignment="Center"/>
+</StackPanel></Border></Grid></UserControl>

@@ -1,0 +1,44 @@
+# Build output
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+publish/
+artifacts/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# VS Code
+.vscode/
+
+# Rider
+.idea/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.cache
+
+# Installers
+*.exe
+*.msi
+
+# Sensitive files
+.env
+.env.*
+secrets.json
+appsettings.Local.json
+*.pfx
+*.p12
+*.key
+
+# Windows
+Thumbs.db
+Desktop.ini

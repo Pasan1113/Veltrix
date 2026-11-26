@@ -1,0 +1,1 @@
+Copy Assets and Views into project; back up and replace MainWindow files. Preserve all Phase 12B fixes. In csproj add ApplicationIcon property and Resource entries for Assets/Veltrix.ico and Assets/VeltrixLogo.png (remove duplicate entries if already present). See chat instructions for tray icon. No splash screen included. Windows build not tested.

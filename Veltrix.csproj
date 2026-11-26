@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net10.0-windows</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+
+		<UseWindowsForms>true</UseWindowsForms>
+		<UseWPF>true</UseWPF>
+
+		<ApplicationIcon>Assets\Veltrix.ico</ApplicationIcon>
+		<AssemblyTitle>Veltrix</AssemblyTitle>
+		<AssemblyName>Veltrix</AssemblyName>
+		<Product>Veltrix Network Monitor</Product>
+		<Version>1.0.0</Version>
+		<AssemblyVersion>1.0.0.0</AssemblyVersion>
+		<FileVersion>1.0.0.0</FileVersion>
+		<Description>Every byte. Every second.</Description>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)' == 'Release'">
+		<PublishTrimmed>false</PublishTrimmed>
+		<PublishReadyToRun>false</PublishReadyToRun>
+		<DebugType>none</DebugType>
+		<DebugSymbols>false</DebugSymbols>
+		<Optimize>true</Optimize>
+		<ApplicationManifest>app.manifest</ApplicationManifest>
+		
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Folder Include="Assets\" />
+		<Folder Include="ViewModels\" />
+
+		<Using Remove="System.Windows.Forms" />
+		<Using Remove="System.Drawing" />
+
+		<Resource Include="Assets\Veltrix.ico" />
+		<Resource Include="Assets\VeltrixLogo.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.2" />
+		<PackageReference Include="Microsoft.Data.Sqlite" Version="11.0.0" />
+		<PackageReference Include="Microsoft.Diagnostics.Tracing.TraceEvent" Version="4.0.2" />
+	</ItemGroup>
+
+</Project>
